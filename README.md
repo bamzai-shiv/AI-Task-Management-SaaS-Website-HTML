@@ -7,8 +7,6 @@
 
 A modern, fully functional AI-powered task management SaaS website built with pure HTML, CSS, and JavaScript. Features a beautiful, responsive design with dark mode, smooth animations, and a complete user experience.
 
-![TaskAI Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=TaskAI+Preview)
-
 ## 🌟 Features
 
 ### Design & UI
