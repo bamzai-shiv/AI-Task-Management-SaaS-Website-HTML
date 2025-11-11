@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - TaskAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>TaskAI</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link active">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-nav-login">Login</a>
+                <a href="#" class="btn btn-primary btn-small">Start Free Trial</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-badge">Features</span>
+                <h1 class="page-title">Everything You Need to<br><span class="gradient-text">Supercharge Productivity</span></h1>
+                <p class="page-subtitle">Discover powerful features designed to help you work smarter, not harder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Features -->
+    <section class="features-detailed">
+        <div class="container">
+            <!-- Feature 1 -->
+            <div class="feature-detail">
+                <div class="feature-detail-content">
+                    <div class="feature-badge">
+                        <i class="fas fa-robot"></i>
+                        <span>AI-Powered</span>
+                    </div>
+                    <h2 class="feature-detail-title">Smart Task Prioritization</h2>
+                    <p class="feature-detail-description">
+                        Our advanced AI algorithms analyze your tasks, deadlines, and work patterns to automatically 
+                        prioritize your to-do list. Never wonder what to work on next.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Intelligent Scoring</strong>
+                                <p>AI assigns priority scores based on urgency and importance</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Deadline Awareness</strong>
+                                <p>Automatically adjusts priorities as deadlines approach</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Pattern Recognition</strong>
+                                <p>Learns from your work habits to optimize suggestions</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Dynamic Reordering</strong>
+                                <p>Task list updates in real-time as conditions change</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary">
+                        Get Started
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-detail-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <h4>Today's Priority Tasks</h4>
+                            <span class="ai-badge">🤖 AI Optimized</span>
+                        </div>
+                        <div class="priority-task high">
+                            <div class="task-info">
+                                <div class="task-check"></div>
+                                <div>
+                                    <h5>Complete Q4 Financial Report</h5>
+                                    <p>Due: Today, 5:00 PM • Priority: High</p>
+                                </div>
+                            </div>
+                            <div class="priority-score">95</div>
+                        </div>
+                        <div class="priority-task medium">
+                            <div class="task-info">
+                                <div class="task-check"></div>
+                                <div>
+                                    <h5>Review Team Proposals</h5>
+                                    <p>Due: Tomorrow, 10:00 AM • Priority: Medium</p>
+                                </div>
+                            </div>
+                            <div class="priority-score">78</div>
+                        </div>
+                        <div class="priority-task low">
+                            <div class="task-info">
+                                <div class="task-check"></div>
+                                <div>
+                                    <h5>Update Documentation</h5>
+                                    <p>Due: Friday • Priority: Low</p>
+                                </div>
+                            </div>
+                            <div class="priority-score">52</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-detail reverse">
+                <div class="feature-detail-content">
+                    <div class="feature-badge">
+                        <i class="fas fa-brain"></i>
+                        <span>Smart Suggestions</span>
+                    </div>
+                    <h2 class="feature-detail-title">AI-Powered Recommendations</h2>
+                    <p class="feature-detail-description">
+                        Get intelligent suggestions for task breakdown, time allocation, and workflow optimization. 
+                        TaskAI acts as your personal productivity assistant.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Task Breakdown</strong>
+                                <p>Automatically splits complex tasks into manageable subtasks</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Time Estimation</strong>
+                                <p>AI predicts how long each task will take based on history</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Schedule Optimization</strong>
+                                <p>Suggests the best time slots for different types of work</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Related Tasks</strong>
+                                <p>Identifies tasks that can be grouped together efficiently</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary">
+                        Try It Free
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-detail-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <h4>AI Suggestions</h4>
+                        </div>
+                        <div class="suggestion-item">
+                            <div class="suggestion-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="suggestion-content">
+                                <h5>Break down "Website Redesign"</h5>
+                                <p>This task is complex. Consider splitting into: Design mockups, Frontend development, Backend integration, Testing</p>
+                                <div class="suggestion-actions">
+                                    <button class="btn-suggestion accept">Apply</button>
+                                    <button class="btn-suggestion dismiss">Dismiss</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suggestion-item">
+                            <div class="suggestion-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="suggestion-content">
+                                <h5>Optimal time for "Deep Work"</h5>
+                                <p>Based on your productivity patterns, schedule this task for 9:00 AM - 11:00 AM tomorrow</p>
+                                <div class="suggestion-actions">
+                                    <button class="btn-suggestion accept">Schedule</button>
+                                    <button class="btn-suggestion dismiss">Later</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-detail">
+                <div class="feature-detail-content">
+                    <div class="feature-badge">
+                        <i class="fas fa-users"></i>
+                        <span>Collaboration</span>
+                    </div>
+                    <h2 class="feature-detail-title">Seamless Team Collaboration</h2>
+                    <p class="feature-detail-description">
+                        Work together effortlessly with your team. Share tasks, track progress, assign responsibilities, 
+                        and communicate in real-time without switching apps.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Task Assignment</strong>
+                                <p>Easily assign tasks to team members with clear ownership</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Real-time Updates</strong>
+                                <p>See changes instantly as team members update their progress</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Comments & Mentions</strong>
+                                <p>Discuss tasks directly with @mentions and threaded comments</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Team Workspaces</strong>
+                                <p>Organize projects into dedicated workspaces for each team</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary">
+                        Start Collaborating
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-detail-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <h4>Team Activity</h4>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">JD</div>
+                            <div class="activity-content">
+                                <p><strong>John Davis</strong> completed <span class="task-name">"Design Review"</span></p>
+                                <span class="activity-time">2 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">SM</div>
+                            <div class="activity-content">
+                                <p><strong>Sarah Miller</strong> commented on <span class="task-name">"Marketing Campaign"</span></p>
+                                <span class="activity-time">15 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">AK</div>
+                            <div class="activity-content">
+                                <p><strong>Alex Kim</strong> assigned you to <span class="task-name">"Sprint Planning"</span></p>
+                                <span class="activity-time">1 hour ago</span>
+                            </div>
+                        </div>
+                        <div class="team-members">
+                            <h5>Team Members (8)</h5>
+                            <div class="members-list">
+                                <div class="member-avatar">JD</div>
+                                <div class="member-avatar">SM</div>
+                                <div class="member-avatar">AK</div>
+                                <div class="member-avatar">ER</div>
+                                <div class="member-avatar">+4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-detail reverse">
+                <div class="feature-detail-content">
+                    <div class="feature-badge">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Analytics</span>
+                    </div>
+                    <h2 class="feature-detail-title">Powerful Analytics & Insights</h2>
+                    <p class="feature-detail-description">
+                        Track your productivity trends, identify bottlenecks, and make data-driven decisions. 
+                        Get detailed insights into your work patterns and team performance.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Productivity Metrics</strong>
+                                <p>Track completion rates, time spent, and efficiency trends</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Team Performance</strong>
+                                <p>Monitor team productivity and identify top performers</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Time Tracking</strong>
+                                <p>Automatic time tracking with detailed breakdowns by project</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Custom Reports</strong>
+                                <p>Generate detailed reports for any time period or project</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary">
+                        View Analytics
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-detail-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <h4>Productivity Dashboard</h4>
+                        </div>
+                        <div class="analytics-grid">
+                            <div class="analytics-card">
+                                <div class="analytics-icon green">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="analytics-info">
+                                    <h5>Tasks Completed</h5>
+                                    <p class="analytics-number">847</p>
+                                    <span class="analytics-change positive">+12% this week</span>
+                                </div>
+                            </div>
+                            <div class="analytics-card">
+                                <div class="analytics-icon blue">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="analytics-info">
+                                    <h5>Hours Tracked</h5>
+                                    <p class="analytics-number">156</p>
+                                    <span class="analytics-change positive">+8% this week</span>
+                                </div>
+                            </div>
+                            <div class="analytics-card">
+                                <div class="analytics-icon purple">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="analytics-info">
+                                    <h5>Efficiency Score</h5>
+                                    <p class="analytics-number">94%</p>
+                                    <span class="analytics-change positive">+5% this week</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-placeholder">
+                            <div class="chart-bar" style="height: 60%"></div>
+                            <div class="chart-bar" style="height: 75%"></div>
+                            <div class="chart-bar" style="height: 55%"></div>
+                            <div class="chart-bar" style="height: 85%"></div>
+                            <div class="chart-bar" style="height: 70%"></div>
+                            <div class="chart-bar" style="height: 90%"></div>
+                            <div class="chart-bar" style="height: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features Grid -->
+    <section class="features-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">And Much More...</h2>
+                <p class="section-subtitle">Discover all the powerful features that make TaskAI the best choice</p>
+            </div>
+            <div class="features-grid-small">
+                <div class="feature-small-card">
+                    <i class="fas fa-sync"></i>
+                    <h3>Cross-Platform Sync</h3>
+                    <p>Access your tasks on web, mobile, and desktop with real-time synchronization</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-bell"></i>
+                    <h3>Smart Notifications</h3>
+                    <p>Get timely reminders and updates without overwhelming your workflow</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-file-export"></i>
+                    <h3>Data Export</h3>
+                    <p>Export your data anytime in multiple formats (CSV, JSON, PDF)</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-plug"></i>
+                    <h3>Integrations</h3>
+                    <p>Connect with Slack, Google Calendar, GitHub, and 50+ other tools</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Custom Tags & Labels</h3>
+                    <p>Organize tasks your way with unlimited custom tags and categories</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Advanced Search</h3>
+                    <p>Find any task instantly with powerful search and filtering options</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>File Attachments</h3>
+                    <p>Attach files, documents, and images directly to your tasks</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Calendar View</h3>
+                    <p>Visualize your tasks and deadlines in multiple calendar formats</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Bank-Level Security</h3>
+                    <p>Your data is protected with AES-256 encryption and 2FA support</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-repeat"></i>
+                    <h3>Recurring Tasks</h3>
+                    <p>Set up tasks that repeat daily, weekly, monthly, or custom schedules</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-moon"></i>
+                    <h3>Dark Mode</h3>
+                    <p>Easy on the eyes with beautiful dark theme for night work sessions</p>
+                </div>
+                <div class="feature-small-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Get help whenever you need it with our dedicated support team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Experience the Future?</h2>
+                <p class="cta-description">
+                    Join thousands of users who are already working smarter with TaskAI
+                </p>
+                <div class="cta-buttons">
+                    <a href="pricing.html" class="btn btn-primary btn-large">
+                        Start Free Trial
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <p class="cta-note">No credit card required • Cancel anytime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>TaskAI</span>
+                    </div>
+                    <p class="footer-description">
+                        Intelligent task management powered by AI. Work smarter, not harder.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TaskAI. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - TaskAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>TaskAI</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-nav-login">Login</a>
+                <a href="#" class="btn btn-primary btn-small">Start Free Trial</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-badge">Pricing</span>
+                <h1 class="page-title">Simple, Transparent<br><span class="gradient-text">Pricing</span></h1>
+                <p class="page-subtitle">Choose the plan that's right for you. Start free, upgrade anytime.</p>
+                
+                <!-- Billing Toggle -->
+                <div class="billing-toggle">
+                    <span class="toggle-label">Monthly</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label">Annual <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-detailed">
+        <div class="container">
+            <div class="pricing-cards-detailed">
+                <!-- Free Plan -->
+                <div class="pricing-card-detailed">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Free</h3>
+                        <p class="plan-tagline">Perfect for individuals getting started</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price-wrapper">
+                            <span class="currency">$</span>
+                            <span class="price" data-monthly="0" data-annual="0">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-info">Forever free</p>
+                    </div>
+                    <ul class="plan-features-detailed">
+                        <li><i class="fas fa-check"></i> Up to 50 tasks</li>
+                        <li><i class="fas fa-check"></i> Basic AI prioritization</li>
+                        <li><i class="fas fa-check"></i> 1 workspace</li>
+                        <li><i class="fas fa-check"></i> Mobile & web apps</li>
+                        <li><i class="fas fa-check"></i> Basic analytics</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Team collaboration</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Advanced AI features</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom integrations</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-full">Get Started Free</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card-detailed featured">
+                    <div class="most-popular">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <p class="plan-tagline">For professionals and small teams</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price-wrapper">
+                            <span class="currency">$</span>
+                            <span class="price" data-monthly="12" data-annual="10">12</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="billing-info annual-savings" style="display: none;">Billed $120 annually (save $28)</p>
+                        <p class="billing-info monthly-billing">Billed monthly</p>
+                    </div>
+                    <ul class="plan-features-detailed">
+                        <li><i class="fas fa-check"></i> Unlimited tasks</li>
+                        <li><i class="fas fa-check"></i> Advanced AI features</li>
+                        <li><i class="fas fa-check"></i> Unlimited workspaces</li>
+                        <li><i class="fas fa-check"></i> All platforms</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Up to 10 team members</li>
+                        <li><i class="fas fa-check"></i> 50+ integrations</li>
+                        <li><i class="fas fa-check"></i> Custom tags & filters</li>
+                        <li><i class="fas fa-check"></i> File attachments (10GB)</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-full">Start 14-Day Free Trial</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card-detailed">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-tagline">For large teams and organizations</p>
+                    </div>
+                    <div class="plan-pricing">
+                        <div class="price-wrapper">
+                            <span class="price-custom">Custom</span>
+                        </div>
+                        <p class="billing-info">Contact for pricing</p>
+                    </div>
+                    <ul class="plan-features-detailed">
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> Unlimited team members</li>
+                        <li><i class="fas fa-check"></i> Custom AI training</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> Advanced security (SSO, SAML)</li>
+                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                        <li><i class="fas fa-check"></i> SLA guarantee (99.9% uptime)</li>
+                        <li><i class="fas fa-check"></i> On-premise deployment option</li>
+                        <li><i class="fas fa-check"></i> Unlimited storage</li>
+                        <li><i class="fas fa-check"></i> Priority feature requests</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="pricing-comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compare Plans</h2>
+                <p class="section-subtitle">See what's included in each plan</p>
+            </div>
+            
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="feature-column">Features</th>
+                            <th>Free</th>
+                            <th class="highlighted">Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">Tasks</td>
+                            <td>Up to 50</td>
+                            <td class="highlighted">Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Workspaces</td>
+                            <td>1</td>
+                            <td class="highlighted">Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Team Members</td>
+                            <td>Solo</td>
+                            <td class="highlighted">Up to 10</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">AI Prioritization</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td class="highlighted"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">AI Suggestions</td>
+                            <td><i class="fas fa-times text-muted"></i></td>
+                            <td class="highlighted"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Advanced Analytics</td>
+                            <td><i class="fas fa-times text-muted"></i></td>
+                            <td class="highlighted"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">File Storage</td>
+                            <td>100MB</td>
+                            <td class="highlighted">10GB</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Integrations</td>
+                            <td>5 apps</td>
+                            <td class="highlighted">50+ apps</td>
+                            <td>Custom + 50+ apps</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Priority Support</td>
+                            <td><i class="fas fa-times text-muted"></i></td>
+                            <td class="highlighted"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Custom AI Training</td>
+                            <td><i class="fas fa-times text-muted"></i></td>
+                            <td class="highlighted"><i class="fas fa-times text-muted"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">SSO / SAML</td>
+                            <td><i class="fas fa-times text-muted"></i></td>
+                            <td class="highlighted"><i class="fas fa-times text-muted"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">SLA Guarantee</td>
+                            <td><i class="fas fa-times text-muted"></i></td>
+                            <td class="highlighted"><i class="fas fa-times text-muted"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about our pricing</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a free trial?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can try TaskAI Pro free for 14 days. No credit card required. After your trial ends, you can continue with the free plan or upgrade to Pro.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I change plans anytime?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can upgrade, downgrade, or cancel your subscription at any time. Changes take effect immediately, and we'll prorate any charges.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and bank transfers for Enterprise plans. All payments are processed securely.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer refunds?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a 30-day money-back guarantee. If you're not satisfied with TaskAI, contact us within 30 days for a full refund, no questions asked.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens to my data if I cancel?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your data is safe! Even after cancellation, you can access your account for 60 days in read-only mode. You can export all your data anytime before final deletion.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a discount for non-profits or education?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer 50% discount for verified non-profit organizations and educational institutions. Contact our sales team to apply for the discount.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Start Your Free Trial Today</h2>
+                <p class="cta-description">
+                    No credit card required. Cancel anytime. Start working smarter in minutes.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">
+                        Try TaskAI Free for 14 Days
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <p class="cta-note">Join 50,000+ users who love TaskAI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>TaskAI</span>
+                    </div>
+                    <p class="footer-description">
+                        Intelligent task management powered by AI. Work smarter, not harder.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TaskAI. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pricing.js"></script>
+</body>
+</html>

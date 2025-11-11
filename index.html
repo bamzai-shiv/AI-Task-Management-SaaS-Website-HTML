@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskAI - Smart Task Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>TaskAI</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-nav-login">Login</a>
+                <a href="#" class="btn btn-primary btn-small">Start Free Trial</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>AI-Powered Productivity</span>
+                </div>
+                <h1 class="hero-title">
+                    Manage Tasks<br>
+                    <span class="gradient-text">10x Smarter</span><br>
+                    with AI
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your workflow with intelligent task management. 
+                    Let AI prioritize, organize, and optimize your productivity automatically.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-large">
+                        Get Started Free
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#demo" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3 class="stat-number" data-target="50000">0</h3>
+                        <p class="stat-label">Active Users</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <h3 class="stat-number" data-target="1000000">0</h3>
+                        <p class="stat-label">Tasks Completed</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <h3 class="stat-number" data-target="99">0</h3>
+                        <p class="stat-label">% Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-title">TaskAI Dashboard</div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="mockup-sidebar">
+                            <div class="sidebar-item active">
+                                <i class="fas fa-home"></i>
+                                <span>Dashboard</span>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-tasks"></i>
+                                <span>Tasks</span>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytics</span>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-users"></i>
+                                <span>Team</span>
+                            </div>
+                        </div>
+                        <div class="mockup-main">
+                            <div class="task-card">
+                                <div class="task-header">
+                                    <span class="task-priority high">High Priority</span>
+                                    <span class="task-ai">🤖 AI Suggested</span>
+                                </div>
+                                <h4>Complete Q4 Report</h4>
+                                <p>Due: Today, 5:00 PM</p>
+                                <div class="task-progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="task-card">
+                                <div class="task-header">
+                                    <span class="task-priority medium">Medium</span>
+                                </div>
+                                <h4>Team Meeting Preparation</h4>
+                                <p>Due: Tomorrow, 10:00 AM</p>
+                                <div class="task-progress">
+                                    <div class="progress-bar" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-text">Trusted by leading companies worldwide</p>
+            <div class="companies-grid">
+                <div class="company-logo">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="company-logo">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="company-logo">
+                    <i class="fab fa-amazon"></i>
+                </div>
+                <div class="company-logo">
+                    <i class="fab fa-spotify"></i>
+                </div>
+                <div class="company-logo">
+                    <i class="fab fa-slack"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Intelligent Task Management</h2>
+                <p class="section-subtitle">
+                    Everything you need to supercharge your productivity with AI
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Prioritization</h3>
+                    <p class="feature-description">
+                        Let AI automatically prioritize your tasks based on deadlines, 
+                        importance, and your work patterns.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Suggestions</h3>
+                    <p class="feature-description">
+                        Get intelligent recommendations for task breakdown, time 
+                        allocation, and workflow optimization.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-description">
+                        Work seamlessly with your team. Share tasks, track progress, 
+                        and communicate in real-time.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Analytics & Insights</h3>
+                    <p class="feature-description">
+                        Track productivity trends, identify bottlenecks, and optimize 
+                        your workflow with detailed analytics.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pink">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3 class="feature-title">Cross-Platform Sync</h3>
+                    <p class="feature-description">
+                        Access your tasks anywhere, anytime. Seamless sync across 
+                        all your devices in real-time.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon red">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">
+                        Bank-level encryption and security. Your data is protected 
+                        with industry-leading security measures.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">How It Works</span>
+                <h2 class="section-title">Get Started in 3 Simple Steps</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="step-title">Create Account</h3>
+                    <p class="step-description">
+                        Sign up in seconds with your email or Google account. 
+                        No credit card required for free trial.
+                    </p>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="step-title">Add Your Tasks</h3>
+                    <p class="step-description">
+                        Import from other tools or start fresh. AI will help 
+                        organize and prioritize automatically.
+                    </p>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="step-title">Boost Productivity</h3>
+                    <p class="step-description">
+                        Let AI optimize your workflow. Watch your productivity 
+                        soar with intelligent insights.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section class="pricing-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">
+                    Start free, upgrade when you're ready
+                </p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Free</h3>
+                    <div class="plan-price">
+                        <span class="price">$0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Up to 50 tasks</li>
+                        <li><i class="fas fa-check"></i> Basic AI features</li>
+                        <li><i class="fas fa-check"></i> 1 workspace</li>
+                        <li><i class="fas fa-check"></i> Mobile apps</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="plan-name">Pro</h3>
+                    <div class="plan-price">
+                        <span class="price">$12</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited tasks</li>
+                        <li><i class="fas fa-check"></i> Advanced AI features</li>
+                        <li><i class="fas fa-check"></i> Unlimited workspaces</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <div class="plan-price">
+                        <span class="price">Custom</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> Custom AI training</li>
+                        <li><i class="fas fa-check"></i> Dedicated support</li>
+                        <li><i class="fas fa-check"></i> SSO & advanced security</li>
+                        <li><i class="fas fa-check"></i> SLA guarantee</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+            <div class="pricing-cta">
+                <a href="pricing.html">View detailed pricing <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">Loved by Thousands of Users</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "TaskAI has completely transformed how I manage my workload. 
+                        The AI prioritization is incredibly accurate and saves me hours every week!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect fill='%236366f1' width='60' height='60'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em' font-family='Arial'%3ESJ%3C/text%3E%3C/svg%3E" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Product Manager at TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Best task management tool I've ever used. The team collaboration 
+                        features are seamless, and the analytics help us stay on track."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect fill='%2310b981' width='60' height='60'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em' font-family='Arial'%3EMC%3C/text%3E%3C/svg%3E" alt="Michael Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>CEO at StartupHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The AI suggestions are game-changing. It's like having a personal 
+                        productivity assistant. My team's efficiency has increased by 40%!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect fill='%23f59e0b' width='60' height='60'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em' font-family='Arial'%3EER%3C/text%3E%3C/svg%3E" alt="Emily Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Operations Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to 10x Your Productivity?</h2>
+                <p class="cta-description">
+                    Join 50,000+ users who are already working smarter with TaskAI
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">
+                        Start Free 14-Day Trial
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <p class="cta-note">No credit card required • Cancel anytime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>TaskAI</span>
+                    </div>
+                    <p class="footer-description">
+                        Intelligent task management powered by AI. Work smarter, not harder.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TaskAI. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
